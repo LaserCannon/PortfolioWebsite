@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+*{ margin:0px; padding:0px; }
+
+/*BODY*/
+/*body{ background:#FFF; color:#aaa; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; }
+/*END BODY*/
+
+img{ border:none; }
+a{ color:#0000FF; text-decoration:none; }
+a:hover{ color:#7b0498; text-decoration:underline; }
+
+#wrapper{ font-family: Pericles Light; font-weight: bold; text-align:center; font-size: 28px; margin-top: 24px; margin-left:auto; margin-right:auto; width:720px; }
+
+.category{ font-weight: bold; font-size: 28px; margin-top: 20px; margin-bottom:8px}
+
+.gameContainer{ margin:auto; width:720px; height:128px; margin-bottom:16px}
+.gameImage{ margin:auto; width:256px; float:left}
+.gameDescription{ font-size: 13px; font-weight: normal; text-align:left; margin:auto; width:450px; float:right}
+
+.gameShortContainer{ margin:auto; width:720px; height:86px; margin-bottom:32px}
+.gameShortDescription {font-size: 13px; font-weight: normal; text-align:left; margin:auto; width:720px;float:left}
+
+.aboutMe{ font-size: 13px; font-weight: normal; text-align:center; margin:auto; width:620px;}
+
+/*Text Types*/
+.workTitle{ font-weight: bold; font-style:italic; font-size: 16px}
+.workPosition{ font-weight: normal; font-style:italic; font-size: 12px}
+.workDownload{ font-weight: normal; font-style:normal; font-size: 12px}
+.workDescription{ font-weight: normal; font-style:normal; font-size: 13px}
+.center { margin: 0 auto; }
+.content{ margin: 0 auto; width: 960px; }
+.clear { clear: both; }
+
+
+/*OLD STUFF*/
+
+.currImageContainer{ width:780px; height:310px; float:left; }
+.boxLocation{ position:relative; height:20px; bottom:30px; right:40px; text-align:right; z-index:200; }
+.boxSpacing{ margin-left:8px; }
+.arrowLeft{ float:left; margin-right:30px; cursor:pointer; }
+.arrowRight{ float:left; margin-left:30px; cursor:pointer; }
+

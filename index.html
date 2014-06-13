@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bryant Cannon - Game Design and Programming</title>
+		
+        <meta content="text/html; charset=utf-8"http-equiv="content-type">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		
+        <link rel="shortcut icon" href="http://bryantrcannon.com/images/favicon.ico">
+		
+		<link rel="stylesheet" href="css/newstyle.css">
+		<link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+		
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		
+		<script>
+		$(document).ready(function() {
+			$('a[href*=#]').each(function() {
+				if(location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+				&& location.hostname == this.hostname
+				&& this.hash.replace(/#/,'') ) {
+					var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+					var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor: false;
+					if($target) {
+						var targetOffset = $target.offset().top;
+						
+						$(this).click(function() {
+							$("#nav li a").removeClass("active");
+							$(this).addClass('active');
+							$('html, body').animate({scrollTop: targetOffset}, 1000);
+							return false;
+						});
+					}
+				}
+			});
+			$window = $(window);
+			$('header[id="header"]').each(function(){
+				var $bgobj = $(this); // assigning the object
+			 
+				$(window).scroll(function() {
+					var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+					 
+					// Put together our final background position
+					var coords = yPos + 'px';
+		 
+					// Move the background
+					$bgobj.css({ "margin-top": coords });
+				}); 
+			}); 
+			$('div[class="game_entry"]').each(function(){
+				var $bgobj = $(this); // assigning the object
+			 
+				$(window).scroll(function() {
+					 var objPos = ($window.scrollTop()-($bgobj.offset().top+$bgobj.height()/2)) + $window.height()/2;
+					 console.log(objPos);
+					 
+					// Put together our final background position
+					var coords = '50% ' + (-objPos/$bgobj.data('speed')+100) + 'px';
+					var alpha = Math.max(1,$window.height()/300) - Math.abs(objPos/100);
+		 
+					// Move the background
+					$bgobj.css({ "background-position": coords });
+					$bgobj.css({ "opacity": alpha });
+				}); 
+			}); 
+		});
+		</script>
+		
+    </head>
+	
+	
+	
+    <body id="wrapper">
+		<header id="header" data-speed="4">
+			<div class="content">
+				<div id="maintitle">
+					<h1>Bryant Cannon </h1>
+					<h2>Game Designer / Programmer </h2>
+				</div>
+				<nav id="nav">
+					<ul>
+						<li><a href="" title="Twitter" >Tw</a></li>
+						<li><a href="" title="Facebook">FB</a></li>
+						<li><a href="" title="LinkedIn">LI</a></li>
+						<li><a href="" title="Resume PDF">PDF</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="header_bar"> </div>
+		</header>
+		<header id="fixed_header">
+			<div class="content">
+				<nav id="nav">
+					<ul>
+						<li><a id="fixed_title" href="#header" title="Top">Bryant Cannon</a> |</li>
+						<li><a href="" title="Twitter" >Tw</a></li>
+						<li><a href="" title="Facebook">FB</a></li>
+						<li><a href="" title="LinkedIn">LI</a></li>
+						<li><a href="" title="Resume PDF">PDF</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="header_bar"> </div>
+		</header>
+		
+		<div id="header_space"> </div>
+		
+		<section id = "games">
+			<div id="game_oz" class="game_entry" data-speed="4">
+				<img class="game_image" src="img/oz_icon.png" width="128" height="128"/>
+				<div class="game_title">Temple Run: Oz</div> <br/>
+				<!img class="game_divider" src="img/gamedivider.jpg"/>
+				<div class="game_description">The quick brown fox jumps over the lazy dog but this text should wrap right 'round or else!!!</div>
+			</div>
+		</section>
+		
+		
+		
+		
+		
+		<div>something</div>
+		<div>something..</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something......</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something....</div>
+		<div>something..</div>
+		<div>something........</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something.</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something...</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something.</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something...</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something..</div>
+		<div>something</div>
+		<div>something......</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something...</div>
+		<div>something..</div>
+		<div>something</div>
+		<div>something............</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something...</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something..</div>
+		<div>something</div>
+		<div>something......</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something...</div>
+		<div>something..</div>
+		<div>something</div>
+		<div>something............</div>
+		<div>something</div>
+		<div>something</div>
+		<div>something</div>
+    </body>
+	
+	
+	
+</html>
+

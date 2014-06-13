@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+*{ margin:0px; padding:0px; z-index:0; }
+
+h1
+{
+	color: 000;
+	font-size: 50px;
+	padding-top:20px;
+	font-family:"Wellfleet";
+	text-align: center;
+}
+h2
+{
+	color: 000;
+	font-size: 20px;
+	padding-top:20px;
+	font-family:"Wellfleet";
+	text-align: center;
+}
+
+
+.content
+{
+	margin: 0 auto;
+	width: 960px;
+}
+
+.game_entry
+{
+	margin: 100px auto;
+	padding: 100px 200px;
+	width: 600px;
+	height: 200px;
+	
+	background: fixed;
+	background-size: 600px auto;
+}
+
+.game_image
+{
+	float: left;
+	width: 128;
+	height: 128;
+}
+
+/* HEADER */
+#header 
+{ 
+	background: #eee;
+	margin: 0 auto; 
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+#header_bar
+{
+	background: #000;
+	height: 10px;
+	width: 100%;
+}
+
+#header_space
+{
+	padding-bottom: 800px;
+	width: 100%;
+}
+
+#fixed_header
+{
+	background: #eee;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+
+#fixed_title
+{
+
+}
+
+#nav ul {
+	height: 60px;
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+}
+#nav li {
+	margin-top: 20px;
+	float: left;
+	padding-left: 21px;
+}
+
+
+/* GAMES */
+#games
+{
+}
+
+#game_oz
+{
+	background: url('../img/oz_shot.jpg') 50% 0 no-repeat fixed;
+}
+
+
