@@ -56,12 +56,28 @@
 					 console.log(objPos);
 					 
 					// Put together our final background position
-					var coords = '50% ' + (-objPos/$bgobj.data('speed')+100) + 'px';
+					var coords = '500px ' + (-objPos/$bgobj.data('speed') + $bgobj.data('offset-y')) + 'px';
 					var alpha = Math.max(1,$window.height()/300) - Math.abs(objPos/100);
 		 
 					// Move the background
 					$bgobj.css({ "background-position": coords });
-					$bgobj.css({ "opacity": alpha });
+				//	$bgobj.css({ "opacity": alpha });
+				}); 
+			}); 
+			$('div[class="game_entry_right"]').each(function(){
+				var $bgobj = $(this); // assigning the object
+			 
+				$(window).scroll(function() {
+					 var objPos = ($window.scrollTop()-($bgobj.offset().top+$bgobj.height()/2)) + $window.height()/2;
+					 console.log(objPos);
+					 
+					// Put together our final background position
+					var coords = '100px ' + (-objPos/$bgobj.data('speed') + $bgobj.data('offset-y')) + 'px';
+					var alpha = Math.max(1,$window.height()/300) - Math.abs(objPos/100);
+		 
+					// Move the background
+					$bgobj.css({ "background-position": coords });
+				//	$bgobj.css({ "opacity": alpha });
 				}); 
 			}); 
 		});
@@ -79,11 +95,21 @@
 					<h2>Game Designer / Programmer </h2>
 				</div>
 				<nav id="nav">
-					<ul>
-						<li><a href="" title="Twitter" >Tw</a></li>
-						<li><a href="" title="Facebook">FB</a></li>
-						<li><a href="" title="LinkedIn">LI</a></li>
-						<li><a href="" title="Resume PDF">PDF</a></li>
+					<ul id="nav_centered">
+						<li><a href="https://twitter.com/LaserCannon" target="_blank" title="Twitter" >
+							<img src="img/Twitter_logo_blue_small.png"/>
+						</a></li>
+						
+						<li><a href="https://www.facebook.com/bryantrcannon" target="_blank" title="Facebook">
+							<img src="img/FB-f-Logo__blue_50.png"/>
+						</a></li>
+						
+						<li><a href="https://www.linkedin.com/profile/view?id=62349935&trk=nav_responsive_tab_profile" target="_blank" title="LinkedIn">
+							<img src="img/LinkedIn-InBug-2CRev.png"/>
+						</a></li>
+						<li><a href="" target="_blank" title="Resume PDF">
+							PDF
+						</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -93,11 +119,23 @@
 			<div class="content">
 				<nav id="nav">
 					<ul>
-						<li><a id="fixed_title" href="#header" title="Top">Bryant Cannon</a> |</li>
-						<li><a href="" title="Twitter" >Tw</a></li>
-						<li><a href="" title="Facebook">FB</a></li>
-						<li><a href="" title="LinkedIn">LI</a></li>
-						<li><a href="" title="Resume PDF">PDF</a></li>
+						<li><a id="fixed_title" href="#header" title="Top">
+							Bryant Cannon
+						</a> </li>
+						<li><a href="https://twitter.com/LaserCannon" target="_blank" title="Twitter" >
+							<img src="img/Twitter_logo_blue_small.png"/>
+						</a></li>
+						
+						<li><a href="https://www.facebook.com/bryantrcannon" target="_blank" title="Facebook">
+							<img src="img/FB-f-Logo__blue_50.png"/>
+						</a></li>
+						
+						<li><a href="https://www.linkedin.com/profile/view?id=62349935&trk=nav_responsive_tab_profile" target="_blank" title="LinkedIn">
+							<img src="img/LinkedIn-InBug-2CRev.png"/>
+						</a></li>
+						<li><a href="" target="_blank" title="Resume PDF">
+							PDF
+						</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -106,102 +144,39 @@
 		
 		<div id="header_space"> </div>
 		
+		<div class="content game_divider">
+			<img src="img/dot.png" width="256" height="256"/>
+		</div>
+		
 		<section id = "games">
-			<div id="game_oz" class="game_entry" data-speed="4">
-				<img class="game_image" src="img/oz_icon.png" width="128" height="128"/>
-				<div class="game_title">Temple Run: Oz</div> <br/>
-				<!img class="game_divider" src="img/gamedivider.jpg"/>
-				<div class="game_description">The quick brown fox jumps over the lazy dog but this text should wrap right 'round or else!!!</div>
+			<div id="game_lostlight" class="game_entry" data-speed="1.4" data-offset-y="700">
+				<div class="game_entry_block">
+					<img class="game_image" src="img/oz_icon.png" width="128" height="128"/>
+					<div class="game_title">Lost Light</div> <br/>
+					<!img class="game_divider" src="img/gamedivider.jpg"/>
+					<div class="game_description">The quick brown fox jumps over the lazy dog but this text should wrap right 'round or else!!!</div>
+				</div>
+			</div>
+			<div id="game_cars" class="game_entry_right" data-speed="1.4" data-offset-y="700">
+				<div class="game_entry_block">
+					<img class="game_image" src="img/oz_icon.png" width="128" height="128"/>
+					<div class="game_title">Cars 2: AppMATes</div> <br/>
+					<!img class="game_divider" src="img/gamedivider.jpg"/>
+					<div class="game_description">The quick brown fox jumps over the lazy dog but this text should wrap right 'round or else!!!</div>
+				</div>
+			</div>
+			<div id="game_oz" class="game_entry" data-speed="1.4" data-offset-y="700">
+				<div class="game_entry_block">
+					<img class="game_image" src="img/oz_icon.png" width="128" height="128"/>
+					<div class="game_title">Temple Run: Oz</div> <br/>
+					<!img class="game_divider" src="img/gamedivider.jpg"/>
+					<div class="game_description">The quick brown fox jumps over the lazy dog but this text should wrap right 'round or else!!!</div>
+				</div>
 			</div>
 		</section>
 		
 		
-		
-		
-		
-		<div>something</div>
-		<div>something..</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something......</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something....</div>
-		<div>something..</div>
-		<div>something........</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something.</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something...</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something.</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something...</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something..</div>
-		<div>something</div>
-		<div>something......</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something...</div>
-		<div>something..</div>
-		<div>something</div>
-		<div>something............</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something...</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something..</div>
-		<div>something</div>
-		<div>something......</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something...</div>
-		<div>something..</div>
-		<div>something</div>
-		<div>something............</div>
-		<div>something</div>
-		<div>something</div>
-		<div>something</div>
+	
     </body>
 	
 	
