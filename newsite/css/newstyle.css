@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+*{ margin:0px; padding:0px; z-index:0; color:#ddd;}
+
+h1
+{
+	color: #ddd;
+	font-size: 50px;
+	padding-top:20px;
+	font-family:"Wellfleet";
+	text-align: center;
+}
+h2
+{
+	color: #ddd;
+	font-size: 20px;
+	padding-top:20px;
+	font-family:"Wellfleet";
+	text-align: center;
+}
+
+a
+{
+	font-family:"Wellfleet";
+	color: #ccc;
+	text-decoration:none;
+}
+a:hover
+{
+	font-family:"Wellfleet";
+	color: #fff;
+	text-decoration:none;
+}
+
+.content
+{
+	margin: 0 auto;
+	max-width: 960px;
+	min-width: 500px;
+}
+
+.content_container
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 750px;
+	padding-top: 300px;
+}
+
+
+.game_entry
+{
+	margin: 0px auto;
+	padding: 20px 20px;
+	width: 600px;
+	height: 160px;
+}
+
+.game_entry_block
+{
+	width: 600px;
+	padding: 0px;
+	margin: 0px;
+	font-family:"Wellfleet";
+	text-shadow: 2px 2px #111;
+	color: #eee;
+}
+.game_title
+{
+	font-size:20px;
+}
+.game_image_l
+{
+	float: left;
+	width: 128;
+	height: 128;
+	margin: 0px 32px;
+}
+.game_image_r
+{
+	float: right;
+	width: 128;
+	height: 128;
+	margin: 0px 32px;
+}
+
+.game_screenshot
+{
+	float: right;
+}
+
+.game_divider
+{
+	vertical-align: left;
+	text-align: left;
+	height: 4px;
+	margin: 0px -20px;
+}
+
+
+
+#wrapper
+{
+	background: #444;
+}
+
+/* HEADER */
+#header 
+{ 
+	background: #777;
+	margin: 0 auto; 
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+#header_bar
+{
+	background: #eee;
+	height: 4px;
+	width: 100%;
+}
+
+#header_space
+{
+	padding-bottom: 800px;
+	width: 100%;
+}
+
+#fixed_header
+{
+	background: #777;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+
+#fixed_title
+{
+
+}
+
+#nav_centered
+{
+	width: 220px;
+}
+
+#nav ul {
+	height: 60px;
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+#nav li {
+	margin-top: 20px;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#nav a img {
+	width: 28px;
+	padding-left:0px;
+	padding-right:0px;
+	height:auto;
+	text-align:center;
+	vertical-align:middle;
+}
+#nav a img:hover {
+	width: 28px;
+	padding-left:0px;
+	padding-right:0px;
+	height:auto;
+	text-align:center;
+	vertical-align:middle;
+}
+
+
+/* GAMES */
+#games
+{
+}
+
+#game_lostlight
+{
+	background-image: url('../img/light_shot.png');
+}
+
+#game_cars
+{
+	background-image: url('../img/appmates_shot1.png');
+}
+
+#game_oz
+{
+	background-image: url('../img/oz_shot2.png');
+}
+
+
