@@ -1,33 +1,31 @@
 @charset "utf-8";
 
-*{ margin:0px; padding:0px; z-index:0; color:#ddd;}
+*{ margin:0px; padding:0px; z-index:0; color:#ddd; font-family:"Open Sans Condensed"; font-size:18px;}
 
 h1
 {
-	color: #ddd;
-	font-size: 50px;
-	padding-top:20px;
-	font-family:"Wellfleet";
+	color: #eee;
+	font-size: 64px;
+	font-family:"Open Sans Condensed";
 	text-align: center;
 }
 h2
 {
 	color: #ddd;
-	font-size: 20px;
-	padding-top:20px;
-	font-family:"Wellfleet";
+	font-size: 30px;
+	font-family:"Open Sans Condensed";
 	text-align: center;
 }
 
 a
 {
-	font-family:"Wellfleet";
+	font-family:"Open Sans Condensed";
 	color: #ccc;
 	text-decoration:none;
 }
 a:hover
 {
-	font-family:"Wellfleet";
+	font-family:"Open Sans Condensed";
 	color: #fff;
 	text-decoration:none;
 }
@@ -45,44 +43,44 @@ a:hover
 	background-size: cover;
 	background-attachment: fixed;
 	height: 750px;
-	padding-top: 300px;
+	padding-top: 250px;
 }
 
 
 .game_entry
 {
 	margin: 0px auto;
-	padding: 20px 20px;
-	width: 600px;
-	height: 160px;
+	padding: 30px 40px;
+	width: 630px;
+	height: 250px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url("../img/containerBG.png");
 }
 
 .game_entry_block
 {
-	width: 600px;
-	padding: 0px;
-	margin: 0px;
-	font-family:"Wellfleet";
+	font-family:"Open Sans Condensed";
 	text-shadow: 2px 2px #111;
 	color: #eee;
 }
 .game_title
 {
-	font-size:20px;
+	font-size:30px;
 }
 .game_image_l
 {
 	float: left;
 	width: 128;
 	height: 128;
-	margin: 0px 32px;
+	margin-right: 25px;
 }
 .game_image_r
 {
 	float: right;
 	width: 128;
 	height: 128;
-	margin: 0px 32px;
+	margin-left: 25px;
 }
 
 .game_screenshot
