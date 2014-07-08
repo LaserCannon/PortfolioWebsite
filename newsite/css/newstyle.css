@@ -47,6 +47,14 @@ a:hover
 }
 
 
+.intro
+{
+	color: #ccc;
+	margin: 600px 40px;
+	text-align: center;
+	font-size: 54px;
+}
+
 .game_entry
 {
 	margin: 0px auto;
@@ -122,7 +130,7 @@ a:hover
 
 #header_space
 {
-	padding-bottom: 800px;
+	padding-bottom: 600px;
 	width: 100%;
 }
 
