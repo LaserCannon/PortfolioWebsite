@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-*{ margin:0px; padding:0px; z-index:0; color:#ddd; font-family:"Open Sans Condensed"; font-size:18px;}
+*{ margin:0px; padding:0px; z-index:0; color:#ddd; font-family:"Open Sans Condensed"; font-size:20px;}
 
 h1
 {
@@ -19,31 +19,34 @@ h2
 
 a
 {
-	font-family:"Open Sans Condensed";
+	font-size: inherit;
 	color: #ccc;
 	text-decoration:none;
 }
 a:hover
 {
-	font-family:"Open Sans Condensed";
+	font-size: inherit;
 	color: #fff;
 	text-decoration:none;
 }
 
 .content
 {
-	margin: 0 auto;
+	margin: 0px auto;
 	max-width: 960px;
 	min-width: 500px;
 }
 
+
 .content_container
 {
+	background: #444;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 750px;
 	padding-top: 250px;
+	margin: 0px auto;
 }
 
 
@@ -69,8 +72,8 @@ a:hover
 .game_entry_block
 {
 	font-family:"Open Sans Condensed";
-	text-shadow: 2px 2px #111;
 	color: #eee;
+	height: 160px;
 }
 .game_title
 {
@@ -79,15 +82,15 @@ a:hover
 .game_image_l
 {
 	float: left;
-	width: 128;
-	height: 128;
+	width: 128px;
+	height: 128px;
 	margin-right: 25px;
 }
 .game_image_r
 {
 	float: right;
-	width: 128;
-	height: 128;
+	width: 128px;
+	height: 128px;
 	margin-left: 25px;
 }
 
@@ -104,6 +107,18 @@ a:hover
 	margin: 0px -20px;
 }
 
+.game_link
+{
+	opacity:0.5;
+	margin: 4px 8px;
+	width: 32px;
+	height: 32px;
+	float:right;
+}
+.game_link:hover
+{
+	opacity:0.75;
+}
 
 
 #wrapper
@@ -191,17 +206,17 @@ a:hover
 
 #game_lostlight
 {
-	background-image: url('../img/light_shot.png');
+	background-image: url('../img/light_shot_sm.png');
 }
 
 #game_cars
 {
-	background-image: url('../img/appmates_shot1.png');
+	background-image: url('../img/appmates_shot1_sm.png');
 }
 
 #game_oz
 {
-	background-image: url('../img/oz_shot2.png');
+	background-image: url('../img/oz_shot2_sm.png');
 }
 
 
