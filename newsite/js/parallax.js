@@ -28,7 +28,7 @@ $(document).ready(function() {
 			}); 
 		}); 
 	
-		$('div[title="scrolling"]').each(function(){
+		$('div[data-jsdata="scrolling"]').each(function(){
 			var $bgobj = $(this); // assigning the object
 	 
 			$(window).scroll(function() {
