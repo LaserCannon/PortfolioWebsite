@@ -319,6 +319,11 @@ a:hover
 	background-image: url('../img/oz_shot2_sm.png');
 }
 
+#game_ultimate
+{
+	background-image: url('../img/ultimate.png');
+}
+
 #game_towers
 {
 	background-image: url('../img/towers.png');
