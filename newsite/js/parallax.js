@@ -43,7 +43,7 @@ $(document).ready(function() {
 		}); 
 	}); 
 	
-	$('div[class="content_container"]').each(function(){
+	$('div[title="scrolling"]').each(function(){
 		var $bgobj = $(this); // assigning the object
 	 
 		$(window).scroll(function() {
@@ -52,26 +52,10 @@ $(document).ready(function() {
 			 
 			// Put together our final background position
 			var coords = '0px ' + (-objPos/$bgobj.data('speed') + $bgobj.data('offset-y')) + 'px';
-			var alpha = Math.max(1,$window.height()/300) - Math.abs(objPos/100);
  
 			// Move the background
 			$bgobj.css({ "background-position": coords });
-		//	$bgobj.css({ "opacity": alpha });
 		}); 
-		
-		/*$(window).on({'touchmove': function(e) { 
-			
-			var objPos = ($window.scrollTop()-($bgobj.offset().top+$bgobj.height()/2)) + $window.height()/2;
-			
-			 
-			// Put together our final background position
-			var coords = '0px ' + (-objPos/$bgobj.data('speed') + $bgobj.data('offset-y')) + 'px';
-			var alpha = Math.max(1,$window.height()/300) - Math.abs(objPos/100);
- 
-			// Move the background
-			$bgobj.css({ "background-position": coords });
-			}
-		});*/
 	});
 });
 		
